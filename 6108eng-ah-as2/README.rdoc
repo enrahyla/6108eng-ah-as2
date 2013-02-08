@@ -263,14 +263,15 @@ vendor
 WEBSITE
   This website is for Oval Ski Club providing information such as the latest questions and answers prices for skiing, important diary dates and general information on the Oval Ski Club.
   The website consist of 8 pages:
-  Home: welcome/index
-  About: welcome/about
-  Contact Us: welcome/contactus
-  FAQ's: welcome/faq
-  Social: welcome/social
- - this provides an extra page for events to be added. The button on the page will take you to /events.
- Racing Team: welcome/racingteam
- lessons: /diaries
+  |-- Website
+  | |--Home: welcome/index
+  | |--About: welcome/about
+  | |--Contact Us: welcome/contactus
+  | |--FAQ's: welcome/faq
+  | |--Social: welcome/social
+  | |---- This provides an extra page for events to be added. The button on the page will take you to /events.
+  | |--Racing Team: welcome/racingteam
+  | |--lessons: /diaries
 
 Database
   The Diaries page on the website and the Events page allow the addition of events or diary dates. Both pages display what is currently held in the database and allow for any additonal information to be added, editted or deleted.
