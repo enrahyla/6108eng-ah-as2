@@ -264,7 +264,7 @@ WEBSITE
   This website is for Oval Ski Club providing information such as the latest questions and answers prices for skiing, important diary dates and general information on the Oval Ski Club.
   The website consist of 8 pages:
   |-- Website
-  | |--Home: welcome/index
+  | |--Home: locahost:3000
   | |--About: welcome/about
   | |--Contact Us: welcome/contactus
   | |--FAQ's: welcome/faq
