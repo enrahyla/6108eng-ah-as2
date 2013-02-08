@@ -2,7 +2,7 @@ class DiariesController < ApplicationController
   # GET /diaries
   # GET /diaries.json
   def index
-    @diaries = Diary.all
+    @diaries = Diary.all.reverse
 
     respond_to do |format|
       format.html # index.html.erb

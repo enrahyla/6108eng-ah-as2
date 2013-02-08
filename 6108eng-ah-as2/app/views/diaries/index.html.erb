@@ -16,7 +16,11 @@
         <%- model_class = Diary -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
-</div>
+</div>  
+ <!-- button for new entry-->
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_diary_path,
+            :class => 'btn btn-primary' %>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -33,7 +37,7 @@
         <td><%= link_to diary.id, diary_path(diary) %></td>
         <td><%= diary.title.strftime("%d/%m/%Y %H:%M")  %></td>
         <td><%= diary.body %></td>
-        <td><%=l diary.created_at%></td>
+        <td><%=l diary.created_at, :format => :long %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_diary_path(diary), :class => 'btn btn-mini' %>
@@ -48,9 +52,7 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_diary_path,
-            :class => 'btn btn-primary' %>
+
             <br>
             <br>
           </div>
